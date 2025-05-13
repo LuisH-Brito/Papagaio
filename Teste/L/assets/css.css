@@ -1,0 +1,29 @@
+body{
+    background-color:aqua;
+    p {
+        background-color:gray;
+        border: 50px;
+        padding: 20px;
+        color:brown;
+    }
+
+
+    /* seletores */
+    
+    article{
+        width: 200px;
+        margin: 0 auto; /*Auto: deixa toda a margin lateral automatica*/
+    }
+
+    .container{
+        background-color: crimson;
+    }
+
+    #texto-1{
+        color: deeppink;
+    }
+
+    #texto-2{
+        color: aquamarine;
+    }
+}
