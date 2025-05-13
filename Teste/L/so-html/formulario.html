@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <dl>
+        <dt>café</dt>
+        <dd>com açucar</dd>
+        <dt>leite</dt>
+        <dd>bebida fria</dd>
+    </dl>
+
+    <form>
+        <fieldset>
+            <legend>Persona:</legend>
+            <label for="Pnome">Primeiro Nome:
+                <input type="text" id="Pnome" name="Pnome" value="nome">
+            </label><br><br>
+            
+            <label for="Unome">Ultimo nome:
+                <input type="text" id="Unome" name="Unome" value="sobrenome">
+            </label><br><br>
+            
+            
+            
+            <label for="email">Email:
+                <input type="email" id="email" name="email" required value="email">
+            </label><br><br>
+
+            <label for="Aniversario">Aniversario:
+                <input type="date" id="Aniversario" name="Aniversario" required>
+            </label><br><br>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome"><br>
+
+
+        <input type="radio" name="ativo" id="ativo" value="ativo">ativo
+        <input type="radio" name="ativo" id="ativo" value="inativo">inativo <br>
+
+        <div>
+            <label>Sacar
+                <input type="checkbox" name="preco" id="preco" value="100"> R$ 100,00
+                <input type="checkbox" name="preco" id="preco" value="200"> R$ 200,00
+                <input type="checkbox" name="preco" id="preco" value="300"> R$ 300,00
+                <input type="checkbox" name="preco" id="preco" value="400"> R$ 400,00
+            </label>
+        </div>
+
+
+        <input type="file" name="documento" id="documento">
+
+        <div>
+            <label>Selecione um jogo <br>
+                <select>
+                    <option value="grounded">Grounded</option>
+                    <option value="expedition">Expedition 33</option>
+                    <option value="gunfire">Gunfire Reborn</option>
+                    <option value="dmc">DmC 5</option>
+                    <option value="unsighted">Unsighted</option>
+                    <option value="pvz">PvZ Gw2</option>
+                </select>
+            </label>
+
+            <label for="Nota">Nota:
+                <input type="radio" name="estrela" id="estrela" value="1">1
+                <input type="radio" name="estrela" id="estrela" value="2">2
+                <input type="radio" name="estrela" id="estrela" value="3">3
+                <input type="radio" name="estrela" id="estrela" value="4">4
+                <input type="radio" name="estrela" id="estrela" value="5">5
+            </label>
+        </div>
+
+        <div>
+            <label>Escreva um comentário um comentário <br>
+                <textarea name="" id=""></textarea>
+            </label>
+        </div>
+
+        <button>Enviar formulario</button>
+    </form>
+
+</body>
+</html>
