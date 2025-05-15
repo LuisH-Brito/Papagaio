@@ -1,0 +1,69 @@
+/* 
+    16px
+    em -> 16px
+    rem -- 1 rem = 18px
+    %
+*/
+html{
+    font-size: 22px;
+}
+
+div {
+    margin: 1px 30px 10px 5px;
+    padding: 3px 100px 10px 40px;
+    border: 6px solid indigo;
+    border-top: 10px dotted indigo;
+    border-bottom: 100px groove indigo;
+    border-left: 40px ridge indigo;
+
+    
+
+    background: hotpink;
+
+
+
+
+    color: aqua;
+    font-size: 16px;
+}
+
+div.teste{
+    border: none;
+    margin: 0 px;
+    background: none;
+    padding: 0px;
+}
+div.aparecer{
+    border: none;
+    margin: 0 px;
+    background: none;
+    padding: 0px;
+}
+
+p{
+    font-size: 100%;
+    color: red;
+}
+
+span{
+    display: block;
+}
+
+
+
+p.exp1{
+    display: block;
+}
+p.exp2{
+    display: inline;
+}
+p.exp3{
+    display: inline-block;
+}
+p.exp4{
+    display: none;
+}
+.aparecer:hover p.exp4{
+    display: block;
+
+}
