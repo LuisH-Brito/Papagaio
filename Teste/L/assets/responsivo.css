@@ -1,0 +1,32 @@
+body{
+    background-color: red;
+    color:aqua;
+    font-size: 26px;
+
+}
+p{
+    display: none;
+}
+
+@media( max-width: 500px){
+    body{
+        background-color: aqua;
+        color: blanchedalmond;
+    }
+    p{
+        display: block;
+    }
+
+    
+}
+
+@media(max-width: 320px){
+    body {
+        font-size: 40px;
+        background-color: purple;
+    }
+    p{
+        
+        color: brown;
+    }
+}
