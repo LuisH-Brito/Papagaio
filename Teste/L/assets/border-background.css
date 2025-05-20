@@ -1,0 +1,25 @@
+div{
+    width: 200px;
+    height: 200px;
+
+    background-color: pink;
+    /* border-radius: 20px 10px 200px 50px; */
+    border-radius: 0%;
+    transition: all 0.5s;
+
+}
+div:hover{
+    border-radius: 50%;
+
+}
+body{
+    height: 100vh;
+    background: url("../../imagens/dua-lipa.gif")
+    /* repeat-x */
+    center
+    no-repeat;
+    background-color: darkred;
+    background-image: linear-gradient(to left,pink, red, yellow,green,pink);
+    background-size: 100% 300px;
+    /* background-size: cover; */
+}
