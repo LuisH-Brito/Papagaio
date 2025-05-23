@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Taylor Swift</title>
+  </head>
+  <body>
+    <a href="navegação-listas-links.html">Voltar</a>
+    <h1>Tudo Sobre Taylor Swift</h1>
+    <img src="imagens/Taylor-2.jpg" alt="Taylor swift" width="500px" />
+    <h2>Informações</h2>
+    <table border="1" id="tabela">
+      <thead>
+        <td>Nome</td>
+        <td>Idade</td>
+        <td>Nacionalidade</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Taylor Alisson Swift</td>
+          <td>35 anos</td>
+          <td>Norte Americana</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Nome</td>
+          <td>Idade</td>
+          <td>Nacionalidade</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>
+      Se vc é um fã de carteirinha se inscreva e venha fazer parte do maior
+      fandom da nossa diva Tay Tay!
+    </p>
+    <form>
+      <div>
+        <label for="nome"
+          >Nome
+          <input type="text" id="nome" required />
+        </label>
+      </div>
+      <div>
+        <label for="email"
+          >Email
+          <input type="email" id="email" required />
+        </label>
+      </div>
+
+      Escolha seu plano de fã:
+      <div>
+        <input type="radio" name="preco" value="150" />R$ 150,00
+        <input type="radio" name="preco" value="200" />R$ 200,00
+        <input type="radio" name="preco" value="250" />R$ 250,00
+        <input type="radio" name="preco" value="300" />R$ 300,00
+      </div>
+      Selecione quais suas coisas favoritas da Taylor:
+      <div>
+        <input type="checkbox" name="favoritos" value="0" />Musica
+        <input type="checkbox" name="favoritos" value="1" />Festas
+        <input type="checkbox" name="favoritos" value="2" />Gatos
+        <input type="checkbox" name="favoritos" value="3" />Letras
+        <input type="checkbox" name="favoritos" value="4" />Personalidade
+      </div>
+      <div>
+        <label>
+          Selecione sua musica favorita:<br />
+          <select>
+            <option value="" selected>Selecione uma Musica</option>
+            <option value="afterglow">Afterglow</option>
+            <option value="red">Red</option>
+            <option value="loml">loml</option>
+            <option value="all-too-well">All too well</option>
+            <option value="maroon">Maroon</option>
+            <option value="dont-blame-me">Don't Blame me</option>
+            <option value="cruel-sammer">Cruel Sammer</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label
+          >Digite seu comentario:<br />
+          <textarea></textarea>
+        </label>
+      </div>
+      <button>Enviar formulário</button>
+    </form>
+  </body>
+</html>

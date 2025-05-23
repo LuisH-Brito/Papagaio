@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsividade</title>
+    <style>
+      body {
+        background: red;
+        color: aliceblue;
+        font-size: 30px;
+      }
+      @media (max-width: 500px) {
+        body {
+          background: blue;
+        }
+      }
+      @media (max-width: 320px) {
+        /* min -> tudo que for maior vai receber alguma coisa */
+        /* max -> tudo que for menor vai acontecer alguma coisa */
+        body {
+          font-size: 50px;
+          background: purple;
+        }
+        p {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    Text 1
+    <p>Text 2</p>
+  </body>
+</html>

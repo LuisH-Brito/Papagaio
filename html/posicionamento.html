@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position-Static, Relative, Absolute e Fixed</title>
+    <style>
+      .container {
+        background: blueviolet;
+        color: aliceblue;
+        margin: 40px 0;
+        position: relative;
+        height: 150px;
+        /* Static */
+        /* position: static; */
+        /* Ele volta para o estado normal, basicamente pra forma crua sem nenhuma alteração */
+      }
+      .filho-relativo {
+        /* Relative */
+        /* Se move tendo o pai como referencia, a posição dele fica relativa ao pai */
+        /* position: relative;
+        top: 10px;
+        left: 40px;
+        bottom: 20px;
+        right: 50px; */
+        background: red;
+        position: relative;
+        top: 10px;
+        left: 40px;
+        bottom: 20px;
+        right: 50px;
+        width: 120px;
+      }
+      .filho-absolute {
+        /* Ele é absoluto em relação ao html */
+        position: absolute;
+        background: red;
+        top: 100px;
+        right: 0px;
+      }
+      .fixed {
+        position: fixed;
+        font-size: 50px;
+        background: red;
+        bottom: 10px;
+        right: 20px;
+        color: aliceblue;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed">Texto Fixed</div>
+    <div class="container">
+      Texto 1
+      <div class="filho-relativo">Texto 2</div>
+      Texto 3
+    </div>
+    <div class="container">
+      Texto1
+      <div class="filho-absolute">Texto 2</div>
+      Texto3
+    </div>
+
+    <div class="container">
+      Texto 1
+      <div class="filho-relativo">Texto 2</div>
+      Texto 3
+    </div>
+    <div class="container">
+      Texto1
+      <div class="filho-absolute">Texto 2</div>
+      Texto3
+    </div>
+  </body>
+</html>

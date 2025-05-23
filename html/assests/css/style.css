@@ -1,0 +1,39 @@
+article {
+  width: 200px; /*Unidade de medida px*/
+  margin: 0 auto; /*Isso significa que ñ tem margem pra cima e pra baixo
+   e o auto ele fica automaticamente distribuido os espaços laterais conforme
+    o tamanho do nosso bloco */
+}
+.container {
+  background: red;
+}
+#texto-1 {
+  color: #fff;
+}
+#texto-2 {
+  color: burlywood;
+  padding: 30px; /*define o espaço interno entre o conteúdo de um elemento
+   e sua borda. Ele cria uma área de preenchimento dentro do elemento, 
+   aumentando seu tamanho visual sem afetar o conteúdo em si.*/
+}
+
+/* ---------------------//--------------------------------------//--------- */
+
+/* Especificidade 0.0.0.1 */
+p {
+  color: red;
+}
+/* Especificidade 0.0.1.1 */
+.nova-cor {
+  color: cornflowerblue;
+}
+/* Especificidade 0.1.1.1 */
+#nova-cor-id-1,
+#nova-cor-id-2 {
+  color: darkgray;
+}
+
+article section article p {
+  font-size: 30px;
+  color: blue;
+}
